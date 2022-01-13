@@ -1,0 +1,57 @@
+<!-- 
+html document نسمي الملف  html يوجد للملفات انواع لان هذه الصفحة تحتوي على
+ html5 وهذا النوع المعتمد ل DOCTYPE html هذا الملف له نوع وهو 
+للمتصفح وهذا يجعلني اتفادى مشاكل  html5 على انها document عند وضع هذا الوسم تحدد نوع ال
+الخاص بها doctype يجب ان اضع وسم xhtml لو بكتب بلغة
+لمعرفة الدوكتايب الخاص بكل لغة من خلال الرابط 
+https://www.w3.org/QA/2002/04/valid-dtd-list.html
+-->
+<!DOCTYPE html> 
+<html>
+	<!--head : نستطيع ان نكتب فيها الوسوم الخاصة باعدادات الصفحة-->
+	<!--close tab الوسوم لا يكون لها head في ال-->
+	<head>
+		<!--meta :هذا الوسم يحدد الداتا الخاصة بالصفحة-->
+	    <!-- utf-8 وهذا الترميز العالمي لدعم اللغة العربية والانجليزية دون اخطاء بشكل سليم للصفحة charset يوجد لهذا الوسم انواع مثل-->
+		<!--هذا الوسم يجب ان يكون في البداية لحتى يبتدي الترميز  قبل مايحط اسم الصفحة-->
+		<meta charset="utf-8">
+        
+		<!--   وهي التي توصف موقعي عند البحث ع جوجل ع اسم موقع تظهر بالنتائج اسم الموقع description هو meta اسم ال 
+				content واسفل الاسم معلومات وهي التي نكتبها في ال-->
+		<meta name="description" content="welcome sair in my website">
+        
+        <!--Define keywords for search engines:-->
+        <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+        
+        <!--Define the author of a page:-->
+        <meta name="author" content="John Doe">
+        
+        <!--Refresh document every 30 seconds:-->
+        <meta http-equiv="refresh" content="30">
+        
+		<!-- Can be used to set a accent color that will be displayed on mobile browsers -->
+		<meta name="theme-color" content="#9d4edd">
+
+		<!--وايضا عند البحث في جوجل bookmark الصفحة و لما اعمل  tab وهو العنوان الخاص بالصفحة والذي يظهر في-->
+		<title>my page</title>
+        
+	    <!--لانه يكتب بالداخل internal style ويسمى head الخاص في الصفحة وركز انو في ال  css هذا الوسم الذي نضع فيه كود ال-->
+		<style>p{color:red}</style>
+        
+		
+        <!--rel=relationship, href=hayper reference
+		css داخل فولدر html هذا الرابط في حال كان الستايل بجنب صفحة ال-->
+		<link rel="stylesheet" href="css/style.css">
+        
+		
+		<script>alert("Welcome to Js");</script>
+		<!--
+		لانه لاينفذ ما بعده الا بعد تنفيذه head ويجب ان يكون اخر شيء ب ال java script هذا الوسم الخاص ب 
+		body حتى عند تنفيذه هنا يتنفذ قبل ما يتنفذ ما بداخل ال
+		-->
+		
+	</head>
+	<body>
+		<p>This is p</p>
+	</body>
+</html>
